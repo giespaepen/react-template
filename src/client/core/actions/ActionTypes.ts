@@ -1,0 +1,14 @@
+export const APP_CONFIGURED: string = "APP_CONFIGURED";
+export const APP_INIT: string = "APP_INIT";
+export const CLEAR_ERROR: string = "CLEAR_ERROR";
+export const CONFIG_RECEIVED: string = "CONFIG_RECEIVED";
+export const ERROR_OCCURRED: string = "ERROR_OCCURRED";
+export const MESSAGES_HIDE: string = "MESSAGES_HIDE";
+export const MESSAGES_HIDE_ALL: string = "MESSAGES_HIDE_ALL";
+export const MESSAGES_NEW: string = "MESSAGES_NEW";
+export const MESSAGES_PURGE: string = "MESSAGES_PURGE";
+export const PROCESS_IDLE: string = "PROCESS_IDLE";
+export const PROCESS_STARDED: string = "PROCESS_STARTED";
+export const SET_APP_TITLE: string = "SET_APP_TITLE";
+export const SET_ERROR: string = "SET_ERROR";
+export const SET_PAGE_TITLE: string = "SET_PAGE_TITLE";

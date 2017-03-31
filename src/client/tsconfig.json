@@ -1,0 +1,24 @@
+{
+    "compilerOptions": {
+        "allowJs": false,
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "jsx": "react",
+        "module": "commonjs",
+        "noEmitOnError": true,
+        "noImplicitAny": true,
+        "removeComments": false,
+        "sourceMap": true,
+        "target": "es6",
+        "types": [
+            "node"
+        ],
+        "typeRoots": [
+            "../../node_modules/@types"
+        ]
+    },
+    "exclude": [
+        "assets/dist.js",
+        "__tests__/*.*"
+    ]
+}

@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BusyComponent busy snapshot 1`] = `
+<div
+  className="busy"
+>
+  <div
+    className="busy-wrapper"
+  >
+    <div
+      className="busy-loader"
+    >
+      <span>
+        Loading
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`BusyComponent idle snapshot 1`] = `<span />`;

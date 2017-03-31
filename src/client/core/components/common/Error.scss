@@ -1,0 +1,14 @@
+@import "../../../assets/style/AppProperties.scss";
+@import "../../../assets/style/AppMixins.scss";
+
+.error {
+    h2 {
+        background-color:lighten($color-error,20%);
+        margin-bottom: $bar-height;
+        padding:$bar-height/3 $bar-height/4;
+    }
+    .error-stack{
+        font-family: monospace;
+        margin-top:$bar-height;
+    }
+}

@@ -1,0 +1,65 @@
+@import "../../../assets/style/AppProperties.scss";
+@import "../../../assets/style/AppMixins.scss";
+
+$message-height: $bar-height;
+
+@mixin create-message-type($selector, $color, $icon) {
+    &[class*=#{$selector}]{
+        background-color:$color;
+        .messages-item-type:before {
+            content: $icon;
+        }
+    }
+}
+
+.messages {
+    height: auto;
+    left: 0;
+    position:fixed;
+    top: 0;
+    width:100%;
+
+    [class^="messages-item"] {
+        @include cursor-hand;
+        color:$color-text-contrast;
+        font-size:1.2rem;
+        height:$message-height;
+        line-height:$message-height;
+        width:100%;
+
+        .messages-item-type {
+                @include fa-icon();
+                display:inline;
+        }
+        
+        .messages-item-type,
+        .messages-item-text {
+            margin-left:$bar-height/4;
+        }
+
+        @include create-message-type("--info", $color-info, $fa-var-comments-o);
+        @include create-message-type("--warning", $color-warning, $fa-var-warning);
+        @include create-message-type("--error", $color-error, $fa-var-bolt);
+        
+        // Hidden animation, see below
+        &[class*="--hidden"] {
+            text-overflow: hidden;
+            animation: MessageHideAnimation .25s both linear 1;
+            -webkit-animation: MessageHideAnimation .25s both linear 1;
+            -moz-animation: MessageHideAnimation .25s both linear 1;
+        }
+    }
+}
+
+@-webkit-keyframes MessageHideAnimation {
+    0%{opacity:1;height:$message-height;}
+    100%{opacity:0;height:0;}
+}
+@-moz-keyframes MessageHideAnimation {
+    0%{opacity:1;height:$message-height;}
+    100%{opacity:0;height:0;}
+}
+@keyframes MessageHideAnimation { 
+    0%{opacity:1;height:$message-height;}
+    100%{opacity:0;height:0;}
+}

@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Title H1 rendered 1`] = `
+<h1
+  className={undefined}
+>
+  <span>
+    title
+  </span>
+</h1>
+`;
+
+exports[`Title H1 rendered 2`] = `
+<h1
+  className={undefined}
+>
+  <span>
+    title
+  </span>
+</h1>
+`;
+
+exports[`Title H2 as default rendered 1`] = `
+<h2
+  className={undefined}
+>
+  <span>
+    title
+  </span>
+</h2>
+`;
+
+exports[`Title H2 rendered 1`] = `
+<h2
+  className={undefined}
+>
+  <span>
+    title
+  </span>
+</h2>
+`;
+
+exports[`Title H3 rendered 1`] = `
+<h1
+  className={undefined}
+>
+  <span>
+    title
+  </span>
+</h1>
+`;
+
+exports[`Title H4 rendered 1`] = `
+<h4
+  className={undefined}
+>
+  <span>
+    title
+  </span>
+</h4>
+`;

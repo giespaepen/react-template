@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Error snapshot test 1`] = `
+<div
+  className="error"
+>
+  <h2>
+    400
+     - Error :(
+  </h2>
+  <h3>
+    the error
+  </h3>
+  <p
+    className="error-content"
+  >
+    Something went wrong while requesting the page.
+  </p>
+  <p
+    className="error-stack"
+  />
+</div>
+`;

@@ -1,0 +1,54 @@
+@import "../../../assets/style/AppProperties.scss";
+@import "../../../assets/style/AppMixins.scss";
+
+$busy-height: 2px;
+$busy-background: white;
+
+.busy {
+    background-color:$busy-background;
+    height: $busy-height;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index:1000;
+    .busy-wrapper {
+        width: 100%;
+        height:$busy-height;
+        .busy-loader{
+            display:block;
+            height:$busy-height;
+            width: 100%;
+            background: linear-gradient(
+                90deg,
+                $color-primary,
+                $color-primary 50%,
+                $busy-background 50%,
+                $busy-background 100%
+            );
+            background-size:200% 100%;
+            -webkit-animation: LoadingAnimation 10s linear infinite;
+            -moz-animation: LoadingAnimation 10s linear infinite;
+            animation: LoadingAnimation 5s linear infinite;
+
+
+            span {
+                display:none;
+            }
+        }
+    }
+}
+
+// Animation definitions
+@-webkit-keyframes LoadingAnimation {
+    0%{background-position:100% 0%}
+    100%{background-position:-100% 0%}
+}
+@-moz-keyframes LoadingAnimation {
+    0%{background-position:100% 0%}
+    100%{background-position:-100% 0%}
+}
+@keyframes LoadingAnimation { 
+    0%{background-position:100% 0%}
+    100%{background-position:-100% 0%}
+}

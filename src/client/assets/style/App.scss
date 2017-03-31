@@ -1,0 +1,50 @@
+// Main style file for the app
+
+@import "./AppProperties.scss";
+@import "./AppMixins.scss";
+
+// Configure susy
+$susy: (
+  columns: 12,  // The number of columns in your grid
+  gutters: 1/4, // The size of a gutter in relation to a single column
+  container: 1120px, // Container width,
+  global-box-sizing: border-box, // Set the box-sizing to border-box
+);
+
+// Configure base styles
+html, body {
+    margin: 0;
+    padding: 0;
+    
+    // Include default styles
+    @include default-font;
+    @include default-links;
+
+    #mount, [class^="app"]{
+        margin: 0;
+        padding: 0;
+        width:100%;
+    }
+
+    [class^="app"] {
+        @include container(12 center static);
+        padding:0 1%;
+
+        // Some title sizes
+        h1 { font-size: 1.7rem; }
+        h2 { font-size: 1.5rem; }
+        h3 { font-size: 1.3rem; }
+    }
+
+    header, footer{
+        width: 100%;
+        height:$bar-height;
+    }
+
+    footer {
+        text-align: center;
+        background-color: $color-gray-subtle;
+        line-height:$bar-height;
+    }
+
+}

@@ -1,0 +1,30 @@
+// Place your settings in this file to overwrite default and user settings.
+{
+    "files.exclude": {
+        "**/.git": true,
+        "**/.DS_Store": true,
+        "node_modules": true,
+        "coverage": true,
+        "deploy": true,
+        "**/*.js": {
+            "when": "$(basename).ts"
+        },
+        "**/*.css": {
+            "when": "$(basename).scss"
+        },
+        "**/*-min.css": true,
+        "**/*.map": true,
+        "typings": true,
+        ".wercker": true,
+        "tslint.autoFixOnSave": true
+    },
+    "files.autoSave": "onFocusChange",
+    "editor.fontSize": 11,
+    "editor.fontFamily": "Fira Code, Monaco, 'Courier New', monospace",
+    "editor.tabCompletion": true,
+    "editor.formatOnSave": true,
+    "typescript.tsdk": "/usr/local/lib/node_modules/typescript/lib",
+    "editor.fontLigatures": true,
+    "tsimporter.doubleQuotes": true,
+    "vscode-exports-autocomplete.quoteCharOverride": "\""
+}

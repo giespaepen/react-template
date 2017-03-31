@@ -1,0 +1,28 @@
+@import "./AppProperties.scss";
+
+// Import susy module
+ @import "~susy/sass/susy";
+
+// Import bootstrap
+@import "../../../../node_modules/bootstrap/scss/bootstrap.scss";
+
+// Import font-awesom
+@import "./font-awesome/scss/font-awesome.scss";
+
+// Default app-wide mixins
+@mixin cursor-hand {
+    cursor: pointer;
+    cursor: hand;
+}
+
+@mixin default-font {
+    font-size: $font-size;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+@mixin default-links {
+    a {
+        color: $color-primary;
+        text-decoration: underline;
+    }
+}

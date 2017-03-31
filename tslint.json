@@ -1,0 +1,12 @@
+{
+    "extends": [
+        "tslint:recommended",
+        "tslint-react"
+    ],
+    "rules": {
+        "curly": false,
+        "ordered-imports": [
+            false
+        ]
+    }
+}

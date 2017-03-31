@@ -1,0 +1,9 @@
+{
+    "recommendations": [
+        "Tyriar.sort-lines",
+        "eg2.tslint",
+        "msjsdiag.debugger-for-chrome",
+        "robinbentley.sass-indented",
+        "christian-kohler.path-intellisense"
+    ]
+}
