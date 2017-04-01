@@ -13,15 +13,16 @@ import { createErrorOccurredAction } from "../../actions/ActionCreators";
 export default class Error extends React.Component<IErrorProperties, State> {
 
     public render(): any {
-        return <div className="error">
-            <h2>{this.props.code} - Error :(</h2>
-            <h3>{this.props.error.message}</h3>
-            <p className="error-content">
-                Something went wrong while requesting the page.
+        return (
+            <div className="error">
+                <h2>{this.props.code} - Error :(</h2>
+                <h3>{this.props.error.message}</h3>
+                <p className="error-content">
+                    Something went wrong while requesting the page.
             </p>
-            <p className="error-stack">
-                {this.props.error.stack}
-            </p>
-        </div>;
+                <p className="error-stack">
+                    {this.props.error.stack}
+                </p>
+            </div>);
     }
 }

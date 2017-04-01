@@ -1,8 +1,8 @@
-import * as logger from "redux-logger";
 import createSagaMiddleware from "redux-saga";
 import rootReducer from "../../reducers/Index";
 import rootSaga from "../../sagas/Index";
 import { applyMiddleware, compose, createStore, Store } from "redux";
+import logger from "redux-logger";
 import { isDevelopment } from "../util/ConfigUtils";
 
 // Get the initial state
@@ -14,7 +14,7 @@ const store: Store<any> = createStore(
     rootReducer,
     INITIAL_STATE,
     compose(
-        (isDevelopment() ? applyMiddleware(logger(), sagaMiddleware) : applyMiddleware(sagaMiddleware)),
+        (isDevelopment() ? applyMiddleware(logger, sagaMiddleware) : applyMiddleware(sagaMiddleware)),
         (window as any).devToolsExtension ? (window as any).devToolsExtension() : (f: any) => f,
     ),
 );

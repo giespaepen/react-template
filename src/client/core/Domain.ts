@@ -51,5 +51,3 @@ export interface ISysError {
     error: Error;
     errorCode: number;
 }
-
-

@@ -9,6 +9,7 @@ import { IPageProperties } from "./Properties";
 export class TestPage extends React.Component<IPageProperties, {}> {
 
     public render(): any {
-        return <div>This is a test page</div>;
+        return (
+            <div>This is a test page</div>);
     }
 }

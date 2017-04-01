@@ -1,8 +1,7 @@
-// tslint:disable-next-line
-import * as React from "react";
 import "./MessageListComponent.scss";
 import * as C from "../../actions/ActionCreators";
 import * as Domain from "../../Domain";
+import * as React from "react";
 import Message from "./Message";
 import State from "../../state/BaseState";
 import { Action } from "redux";

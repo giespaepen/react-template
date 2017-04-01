@@ -30,16 +30,17 @@ export default class AppComponent extends React.Component<IAppProperties, any> {
     public render(): any {
         const { children }: any = this.props;
         const className: string = "app" + (this.props.routeSuffix ? "--" + this.props.routeSuffix : "");
-        return <section className={className}>
-            <header>
-                <MessageListComponent />
-                <BusyComponent />
-            </header>
-            {children}
-            <footer>
-                <DemoFooterComponent />
-            </footer>
-        </section>;
+        return (
+            <section className={className}>
+                <header>
+                    <MessageListComponent />
+                    <BusyComponent />
+                </header>
+                {children}
+                <footer>
+                    <DemoFooterComponent />
+                </footer>
+            </section>);
     }
 
     protected componentWillMount(): void {

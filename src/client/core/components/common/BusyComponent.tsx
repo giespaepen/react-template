@@ -21,11 +21,12 @@ export default class BusyComponent extends React.Component<IBusyProperties, Stat
 
     public render(): any {
         if (this.props.busy) {
-            return <div className="busy">
-                <div className="busy-wrapper">
-                    <div className="busy-loader"><span>Loading</span></div>
-                </div>
-            </div>;
+            return (
+                <div className="busy">
+                    <div className="busy-wrapper">
+                        <div className="busy-loader"><span>Loading</span></div>
+                    </div>
+                </div>);
         } else {
             return <span />;
         }

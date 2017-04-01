@@ -13,9 +13,10 @@ export default class Message extends React.Component<IMessageProperties, {}> {
             this.props.message.typeAsString +
             (!this.props.message.isHidden ? " fadeIn animated" : "--hidden");
 
-        return <div className={className} onClick={handler}>
-            <span className="messages-item-type" />
-            <span className="messages-item-text">{this.props.message.text}</span>
-        </div>;
+        return (
+            <div className={className} onClick={handler}>
+                <span className="messages-item-type" />
+                <span className="messages-item-text">{this.props.message.text}</span>
+            </div>);
     }
 }

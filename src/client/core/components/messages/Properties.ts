@@ -12,7 +12,7 @@ export class Message implements Domain.IMessage {
     constructor(
         public text: string | JSX.Element,
         type?: string,
-        isPersistent?: boolean
+        isPersistent?: boolean,
     ) {
         this.isPersistent = isPersistent || false;
         this.isHidden = false;

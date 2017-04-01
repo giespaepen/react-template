@@ -21,8 +21,9 @@ export default class ErrorRoute extends React.Component<IErrorRouteProperties, {
 
     public render(): any {
         let code: number = parseInt(this.props.params.id || "400", 10);
-        return <div className="error-route">
-            <Error code={code} error={this.props.error} />
-        </div>;
+        return (
+            <div className="error-route">
+                <Error code={code} error={this.props.error} />
+            </div>);
     }
 }

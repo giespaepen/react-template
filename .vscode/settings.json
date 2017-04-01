@@ -26,5 +26,6 @@
     "typescript.tsdk": "/usr/local/lib/node_modules/typescript/lib",
     "editor.fontLigatures": true,
     "tsimporter.doubleQuotes": true,
-    "vscode-exports-autocomplete.quoteCharOverride": "\""
+    "vscode-exports-autocomplete.quoteCharOverride": "\"",
+    "tslint.configFile": "tslint.json"
 }

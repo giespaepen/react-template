@@ -4,7 +4,10 @@
         "tslint-react"
     ],
     "rules": {
-        "curly": false,
+        "curly": [
+            true,
+            "ignore-same-line"
+        ],
         "ordered-imports": [
             false
         ]

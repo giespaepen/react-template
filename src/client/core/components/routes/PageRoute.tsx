@@ -25,9 +25,10 @@ export default class PageRoute extends React.Component<IPageRouteProperties, {}>
             let id: string = (this.props.params.id || "index").toLowerCase();
             let component: any = directory.findItem(id).component;
 
-            return <div className="page-route">
-                {React.createElement(component, {})}
-            </div>;
+            return (
+                <div className="page-route">
+                    {React.createElement(component, {})}
+                </div>);
         } catch (error) {
             setTimeout(() => { this.props.errorHandler(error, 500); }, 250);
             return <span />;
